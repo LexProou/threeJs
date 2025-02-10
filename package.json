@@ -1,0 +1,17 @@
+{
+  "name": "threejs",
+  "version": "1.0.0",
+  "main": "App.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dat.gui": "^0.7.9",
+    "three": "^0.173.0"
+  }
+}

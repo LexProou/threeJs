@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  background: #1B1918;
+}
+
+h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  background: #1B1918;
+}
+
+#file-input {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.button-input {
+  position: absolute;
+  background: rgb(207, 135, 53);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-left: 3rem ;
+  margin-top: 0rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  animation: blink 2s infinite;
+}
+
+.button-input:hover {
+  background-color: rgba(218, 191, 174, 1);
+  transform: scale(1.05);
+  color: black;
+}
+
+.title-container {
+  margin: 1rem;
+}
+
+/* Стили для модального окна */
+#modal {
+  display: none;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(242, 214, 197, 1);
+  color: white;
+  max-width: 500px;
+  width: 80%;
+  background: linear-gradient(180deg, #1B1918 5%, rgb(196 193 190) 100%);
+  cursor: move;
+}
+
+#modal h2 {
+  color: rgba(242, 214, 197, 1);
+  margin: 0;
+}
+
+#modal p {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.09px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgba(242, 214, 197, 1);
+}
+
+#close-btn {
+  display: flex;
+  justify-content: flex-end;
+  color: rgba(242, 214, 197, 1);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#close-btn:hover {
+  color: rgb(225, 202, 188);
+}
+
+/* Стили для списка свойств */
+#model-properties {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: rgba(72, 66, 64, 0.5);
+}
+
+#model-coordinates {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  background: rgba(72, 66, 64, 0.5);
+}
+
+.property {
+  background: rgba(72, 66, 64, 0.5);
+}
+
+.property span {
+  font-weight: bold;
+}
+
+#show-properties-btn,
+#show-coordinates-btn,
+#change-material-btn {
+  background: rgba(27, 25, 24, 1);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#change-material-btn {
+  background: rgba(218, 191, 174, 1);
+  color: rgba(27, 25, 24, 1);
+}
+
+#show-properties-btn:hover,
+#show-coordinates-btn:hover {
+  background: #34312f;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+#change-material-btn:hover {
+  background: #807873;
+}
+
+.propertyAll {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  height: 30vh;
+  margin: 1rem;
+  width: 150vh;
+}
+
+.container h1 {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 4%;
+  color: rgba(245, 245, 245, 1);
+}
+
+.container p {
+  font-family: Helvetica;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 4%;
+  color: rgba(240, 124, 0, 1);
+}
+
+
+#header-container {
+  cursor: pointer;
+  border: 10px dashed rgba(242, 214, 197, 1);
+}
+
+img {
+  width: 300px;
+  height: 50px;
+  top: 156px;
+  left: 50px;
+  gap: 6px;
+}

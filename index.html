@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Model</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div id="header-container">
+      <input type="file" id="file-input" style="display: none;">
+
+      <div class="title-container">
+        <h1 class="title">МАКЕТ</h1>
+        <p class="description">для тестового задания (JavaScript)</p>    
+        <h2 class="button-input">Нажмите для загрузки</h2>
+      </div>
+      
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modal">
+      <div id="close-btn">Х</div>
+      <h2>12МК-3-5</h2>
+      <p id="model-info">Кран шаровой с пневмоприводом фланцевый</p>
+  <!-- Кнопка для смены материала -->
+  <button id="change-material-btn">Поменять материал</button>
+      <div class="propertyAll">
+        <!-- Кнопка для показа/скрытия свойств модели -->
+        <button id="show-properties-btn">Основные свойства</button>
+
+        <!-- Блок свойств модели -->
+        <div id="model-properties">
+          <div class="property">
+            <span>Диаметр:</span> <span id="diameter">0</span> мм
+          </div>
+          <div class="property">
+            <span>Давление:</span> <span id="pressure">0</span> МПа
+          </div>
+        </div>
+
+        <!-- Координаты модели -->
+        <button id="show-coordinates-btn">Координаты</button>
+        <div id="model-coordinates">
+          <div class="coordinates">
+            <span>X:</span> <span id="coord-x">0</span>
+          </div>
+          <div class="coordinates">
+            <span>Y:</span> <span id="coord-y">0</span>
+          </div>
+          <div class="coordinates">
+            <span>Z:</span> <span id="coord-z">0</span>
+          </div>
+        </div>      
+      </div>
+    </div>
+  </div>
+
+  <canvas id="3d-canvas" width="1440" height="300"></canvas>
+  <footer>
+    <img src="./img/logo.svg" alt="Frame">
+    <img src="./img/Title.svg" alt="Title">
+  </footer>
+  <script type="module" src="App.js"></script>
+</body>
+
+</html>
